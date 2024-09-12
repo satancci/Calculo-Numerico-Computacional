@@ -9,4 +9,4 @@ def cauchy(x, pol):
         return pow(sum([pol[i][0]*pow(d, pol[i][1]) for i in range(0, len(pol))]), 1/(len(pol)))
     return 0
 
-print(f'  cota de Cauchyd: {cauchy(int(input("parada desejada [5]: ") or 5), soma_cauchy(entrada()))}')
+print(f'  cota de Cauchy: {cauchy(int(input("parada desejada [5]: ") or 5), soma_cauchy(entrada()))}')
