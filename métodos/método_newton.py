@@ -7,12 +7,12 @@ def newton(x):
     return 0
 
 def parada(erro):
-    xant = 0
-    xo = i = 1
-    while abs((xo-xant)/xo) >= erro:
+    atual = 0
+    anterior = i = 1
+    while abs((atual-anterior)/atual) >= erro:
         i += 1
-        xant = xo
-        xo = newton(i)
-    return xo
+        anterior = atual
+        atual = newton(i)
+    return atual
 
 print(f'  método de newton: {parada(float(input("erro [0.001]: ") or 0.001))}')
