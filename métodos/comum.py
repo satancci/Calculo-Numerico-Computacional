@@ -14,5 +14,5 @@ def f(argumento):
 def df(argumento):
     return -math.sin(argumento)-1 ### aqui a derivada dela
 
-def minimo(a,b,e): ### quantidade mínima exclusivo para a bipartição
+def minimo(a,b,e): ### quantidade mínima (exclusivo para a bipartição)
     return int(math.log2(b-a)-math.log2(e))+1
