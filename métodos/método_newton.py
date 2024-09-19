@@ -7,10 +7,10 @@ def newton(x):
         return n-(f(n)/df(n))
     return 0
 
-def nw(n, f, df, maxerro = 1e-5, maxitem = 10):
+def nw(n, f , df, maxerro = 1e-5, maxitem = 100):
     k = 0
     while abs(f(n))> maxerro or k > maxitem:
-        n = n-(f(n)/df(n)) 
+        n -= (f(n)/df(n)) 
         k += 1
     return n
 
@@ -20,4 +20,5 @@ def f(x):
 def df(x):
     return -math.sin(x)-1
 
-print(f'  método de newton: {parada(float(input("erro [0.001]: ") or 1e-3), newton)}')
+print(f'  método de newton: {parada(float(input("erro (recursividade) [1e-5]: ") or 1e-5), newton)}    (recursividade)\n')
+print(f'  método de newton: {nw(0, f, df, float(input("erro (decremento contínuo) [1e-5]: ") or 1e-5))}    (decremento contínuo)\n\n')
