@@ -10,4 +10,4 @@ def secante(x):
         return 0.001
     return 0
 
-print(f'  método das secantes: {parada(float(input("erro [0.001]: ") or 0.001), secante)}')
+print(f'  método das secantes: {parada(float(input("erro [0.001]: ") or 1e-3), secante)}')

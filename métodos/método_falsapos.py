@@ -14,5 +14,5 @@ def positivo(d):
 def f(argumento):
     return math.cos(argumento)-argumento ###   altere aqui sua função
 
-print(f'    [x]: {searchx(0, 1, f, 0.05)}')
-print(f'    [f(x)]: {f(searchx(0, 1, f, 0.05))}')
+print(f'    [x]: {searchx(0, 1, f, 5e-2)}')
+print(f'    [f(x)]: {f(searchx(0, 1, f, 5e-2))}')

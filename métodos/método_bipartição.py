@@ -15,5 +15,5 @@ def f(argumento):
 def minimo(a,b,e):
     return int(math.log2(b-a)-math.log2(e))+1
 
-print(f'    [x]: {searchx(0, 1, f, 0.05)}')
-print(f'    [f(x)]: {f(searchx(0, 1, f, 0.05))}')
+print(f'    [x]: {searchx(0, 1, f, 5e-2)}')
+print(f'    [f(x)]: {f(searchx(0, 1, f, 5e-2))}')
